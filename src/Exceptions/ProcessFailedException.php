@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Nelson\Ssh2\Exceptions;
 
-use Nelson\Ssh2\VO\Process;
+use Nelson\Ssh2\Process;
 use InvalidArgumentException;
 use RuntimeException;
 

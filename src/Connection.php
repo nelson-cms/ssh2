@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nelson\Ssh2\VO;
+namespace Nelson\Ssh2;
 
 use Exception;
 use Nelson\Ssh2\Exceptions\AuthenticationFailedException;
