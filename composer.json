@@ -1,5 +1,5 @@
 {
-	"name": "nelson/ssh2",
+	"name": "nelson-cms/ssh2",
 	"description": "Simple SSH2 wrapper for Nette",
 	"require": {
 		"php": "^8.3",
