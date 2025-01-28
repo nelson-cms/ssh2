@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Nelson\Ssh2\Exceptions;
+namespace NelsonCms\Ssh2\Exceptions;
 
-use Nelson\Ssh2\Process;
 use InvalidArgumentException;
+use NelsonCms\Ssh2\Process;
 use RuntimeException;
 
 class ProcessFailedException extends RuntimeException

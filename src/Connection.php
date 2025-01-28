@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Nelson\Ssh2;
+namespace NelsonCms\Ssh2;
 
 use Exception;
-use Nelson\Ssh2\Exceptions\AuthenticationFailedException;
-use Nelson\Ssh2\Exceptions\ConnectionFailedException;
+use NelsonCms\Ssh2\Exceptions\AuthenticationFailedException;
+use NelsonCms\Ssh2\Exceptions\ConnectionFailedException;
 
 final class Connection
 {

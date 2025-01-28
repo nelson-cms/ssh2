@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Nelson\Ssh2\DI;
+namespace NelsonCms\Ssh2\DI;
 
-use Nelson\Ssh2\Connection;
+use NelsonCms\Ssh2\Connection;
 use Nette\DI\CompilerExtension;
 
 final class Ssh2Extension extends CompilerExtension

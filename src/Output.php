@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Nelson\Ssh2;
+namespace NelsonCms\Ssh2;
 
 final readonly class Output
 {
