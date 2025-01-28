@@ -2,7 +2,7 @@ parameters:
 	tmpDir: %currentWorkingDirectory%/temp/phpstan/
 
 	paths:
-		- ../src/
-		- ../tests/
+		- %currentWorkingDirectory%/src/
+#		- %currentWorkingDirectory%/tests/
 
 	level: 9

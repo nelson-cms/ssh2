@@ -9,7 +9,7 @@ final class Process
 {
 	private string $commandLine;
 	private string $cmd;
-	private ?Output $output = null;
+	private Output $output;
 	private bool $isExecuted = false;
 
 	/**
@@ -64,6 +64,7 @@ final class Process
 
 	public function getOutput(): string
 	{
+
 		return $this->output->getStdIo();
 	}
 
@@ -88,7 +89,7 @@ final class Process
 
 	public function isSuccessful(): bool
 	{
-		return $this->isExecuted && $this->output !== null && !$this->output->hasError();
+		return $this->isExecuted && isset($this->output) && !$this->output->hasError();
 	}
 
 
