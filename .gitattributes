@@ -1,0 +1,5 @@
+.gitignore export-ignore
+.editorconfig export-ignore
+.dev export-ignore
+composer.phar export-ignore
+run export-ignore
