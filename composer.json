@@ -16,11 +16,11 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Nelson\\Ssh2\\": "src/"
+			"NelsonCms\\Ssh2\\": "src/"
 		}
 	},
 	"autoload-dev": {
-		"psr-4": { "Nelson\\Ssh2\\Tests\\": "tests/" }
+		"psr-4": { "NelsonCms\\Ssh2\\Tests\\": "tests/" }
 	},
 	"config": {
 		"allow-plugins": {
