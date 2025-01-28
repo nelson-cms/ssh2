@@ -1,0 +1,8 @@
+parameters:
+	tmpDir: %currentWorkingDirectory%/temp/phpstan/
+
+	paths:
+		- ../src/
+		- ../tests/
+
+	level: 9

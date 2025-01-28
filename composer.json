@@ -1,0 +1,30 @@
+{
+	"name": "nelson/ssh2",
+	"description": "Simple SSH2 wrapper for Nette",
+	"require": {
+		"php": "^8.3",
+		"ext-ssh2": "*",
+		"nette/di": "^3.2"
+	},
+	"require-dev": {
+		"phpstan/extension-installer": "^1.0",
+		"phpstan/phpstan": "^1.0.0",
+		"phpstan/phpstan-nette": "^1.0.0",
+		"roave/security-advisories": "dev-master",
+		"phpunit/phpunit": "^9.0.0",
+		"tracy/tracy": "^2.9"
+	},
+	"autoload": {
+		"psr-4": {
+			"Nelson\\Ssh2\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": { "Nelson\\Ssh2\\Tests\\": "tests/" }
+	},
+	"config": {
+		"allow-plugins": {
+			"phpstan/extension-installer": true
+		}
+	}
+}
