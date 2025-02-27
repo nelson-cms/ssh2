@@ -2,9 +2,9 @@
 	"name": "nelson-cms/ssh2",
 	"description": "Simple SSH2 wrapper for Nette",
 	"require": {
-		"php": "^8.3",
+		"php": "^7.3 | ^8.0",
 		"ext-ssh2": "*",
-		"nette/di": "^3.2"
+		"nette/di": "^3.0"
 	},
 	"require-dev": {
 		"phpstan/extension-installer": "^1.0",

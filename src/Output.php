@@ -3,14 +3,27 @@ declare(strict_types=1);
 
 namespace NelsonCms\Ssh2;
 
-final readonly class Output
+final class Output
 {
+	/** @var string */
+	private $command;
+
+	/** @var string */
+	private $stdIo;
+
+	/** @var string */
+	private $stdError;
+
+
 	public function __construct(
-		private string $command,
-		private string $stdIo,
-		private string $stdError,
+		string $command,
+		string $stdIo,
+		string $stdError
 	)
 	{
+		$this->stdError = $stdError;
+		$this->stdIo = $stdIo;
+		$this->command = $command;
 	}
 
 

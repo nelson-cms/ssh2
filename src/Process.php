@@ -7,10 +7,24 @@ use LogicException;
 
 final class Process
 {
-	private string $commandLine;
-	private string $cmd;
-	private Output $output;
-	private bool $isExecuted = false;
+	/** @var string */
+	private $commandLine;
+
+	/** @var string */
+	private $cmd;
+
+	/** @var Output */
+	private $output;
+
+	/** @var bool */
+	private $isExecuted = false;
+
+	/** @var Connection */
+	private $connection;
+
+	/** @var string|null */
+	private $cwd = null;
+
 
 	/**
 	 * @param Connection $connection
@@ -18,11 +32,13 @@ final class Process
 	 * @param string|null $cwd
 	 */
 	public function __construct(
-		private readonly Connection $connection,
-		string|array $cmd,
-		private readonly ?string $cwd = null,
+		Connection $connection,
+		$cmd,
+		?string $cwd = null
 	)
 	{
+		$this->cwd = $cwd;
+		$this->connection = $connection;
 		$this->cmd = is_array($cmd) ? implode(' ', $cmd) : $cmd;
 		$this->commandLine = $this->cwd !== null ? 'cd ' . $this->cwd . ' && ' . $this->cmd : $this->cmd;
 	}
