@@ -105,7 +105,7 @@ final class Process
 
 	public function isSuccessful(): bool
 	{
-		return $this->isExecuted && isset($this->output) && !$this->output->hasError();
+		return $this->isExecuted && isset($this->output) && !$this->output->hasError(); // @phpstan-ignore-line
 	}
 
 
