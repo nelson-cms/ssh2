@@ -35,7 +35,7 @@ final class Ssh2Extension extends CompilerExtension
 		string $publicKeyPath,
 		string $privateKeyPath,
 		int $port = 22,
-		?string $passphrase = null,
+		?string $passphrase = null
 	)
 	{
 		$this->passphrase = $passphrase;
